@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+.row{
+  
+  display: grid;
+  grid-template-columns: repeat(4,23%);
+  gap: 7px;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .calculator{
+  border: 1px solid gray;
+  width: 230px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  width: 220px;
+  height: 100px;
+  border:1px solid gray;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  align-content: flex-end;
+  text-align: right;
+  padding-right: 10px;
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button{
+  border-radius: 50%;
+  width: 50px;
+  border: 0;
+  height: 50px;
+  font-size: 20px;
+  background-color: rgb(83, 82, 82);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+button:hover{
+  background-color: rgb(128, 127, 127);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row button:first-child, .row button:nth-child(2), .row button:nth-child(3){
+  background-color: rgb(189, 189, 189);
+  color: black;
+}
+.row button:first-child:hover, .row button:nth-child(2):hover, .row button:nth-child(3):hover{
+  background-color: rgb(221, 221, 221);
+}
+.row button:nth-child(4), .row button:nth-child(8), .row button:nth-child(12), .row button:nth-child(16), .row button:last-child{
+  background-color: rgb(255, 183, 48);
+  color: white;
+  
+}
+.row button:nth-child(4):hover, .row button:nth-child(8):hover, .row button:nth-child(12):hover, .row button:nth-child(16):hover, .row button:last-child:hover{
+  background-color: rgba(255, 183, 48, 0.834);
+  
+}
+.row button:nth-child(17){
+  width: 105px;
+  border-radius: 50px;
+  text-align: left;
+  padding-left: 20px;
 }
