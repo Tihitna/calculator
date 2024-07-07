@@ -19,7 +19,7 @@
   font-weight: 700;
 }
 .container{
-  width: 220px;
+  width: 215px;
   height: 100px;
   border:1px solid gray;
   border-radius: 6px;
@@ -27,7 +27,8 @@
   align-content: flex-end;
   text-align: right;
   padding-right: 10px;
-  
+  padding-left: 5px;
+  overflow: hidden;
 }
 button{
   border-radius: 50%;
